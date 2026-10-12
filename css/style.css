@@ -1,0 +1,5639 @@
+/* =========================================================
+   UYKUN - PERSONAL WEB GIS PORTFOLIO
+   Main Stylesheet
+========================================================= */
+
+
+/* =========================================================
+   1. GENERAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2A152A;
+    background-color: #D9B9E2;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   2. NAVIGATION BAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    height: 85px;
+
+    background-color: #641863;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+    
+     /* Navbar altındaki açık mor çizgi */
+    border-bottom: 2px solid #D9B9E2;
+}
+
+
+/* UYKUN LOGO */
+
+.logo {
+    color: #ffffff;
+
+    font-size: 27px;
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    text-decoration: none;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D9B9E2;
+}
+
+
+/* =========================================================
+   3. HERO / ABOUT INTRODUCTION
+========================================================= */
+
+.hero {
+    min-height: 620px;
+
+    background-color: #D9B9E2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 10%;
+}
+
+
+/* HERO LEFT SIDE */
+
+.hero-text {
+    width: 52%;
+}
+
+
+/* HELLO I'M */
+
+.small-title {
+    color: #641863;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+/* DILARA UYKUN */
+
+.hero h1 {
+    color: #641863;
+
+    font-size: 64px;
+
+    margin-bottom: 10px;
+}
+
+
+/* GEOMATICS ENGINEERING STUDENT */
+
+.hero h2 {
+    color: #2A152A;
+
+    font-size: 23px;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+/* ABOUT TEXT */
+
+.hero-description {
+    max-width: 650px;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* ABOUT ME BUTTON */
+
+.about-button {
+    display: inline-block;
+
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background-color: #4d124c;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   4. HERO IMAGE
+========================================================= */
+
+.hero-image {
+    width: 38%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 360px;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    border: 6px solid #641863;
+
+    box-shadow: 15px 15px 0 #641863;
+}
+
+
+/* =========================================================
+   5. ABOUT SUMMARY
+========================================================= */
+
+.about-summary {
+    background-color: #641863;
+
+    padding: 90px 10% 110px;
+
+    color: #ffffff;
+}
+
+
+/* ABOUT SECTION TITLE */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+/* ABOUT ME */
+
+.section-heading p {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+/* A LITTLE ABOUT MY JOURNEY */
+
+.section-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   6. ABOUT CARDS
+========================================================= */
+
+.cards {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+
+/* INDIVIDUAL CARD */
+
+.card {
+    width: 32%;
+
+    min-height: 300px;
+
+    background-color: #D9B9E2;
+    color: #2A152A;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* CARD ICON */
+
+.card-icon {
+    font-size: 35px;
+
+    margin-bottom: 25px;
+}
+
+
+/* CARD TITLE */
+
+.card h3 {
+    color: #641863;
+
+    font-size: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+/* CARD TEXT */
+
+.card p {
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* LEARN MORE */
+
+.card a {
+    color: #641863;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   7. HOME PROJECTS
+========================================================= */
+
+.home-projects {
+    background-color: #D9B9E2;
+
+    padding: 100px 10%;
+}
+
+
+/* PROJECTS HEADING */
+
+.projects-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+/* MY WORK */
+
+.projects-heading > p:first-child {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+/* PROJECTS */
+
+.projects-heading h2 {
+    color: #641863;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* PROJECTS INTRO */
+
+.projects-intro {
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   8. PROJECT LIST
+========================================================= */
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* INDIVIDUAL PROJECT */
+
+.project-item {
+    min-height: 100px;
+
+    background-color: #ffffff;
+
+    border-radius: 15px;
+
+    border-left: 6px solid #641863;
+
+    padding: 25px 35px;
+
+    display: flex;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+
+/* PROJECT NUMBER */
+
+.project-number {
+    color: #641863;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-right: 35px;
+}
+
+
+/* PROJECT TITLE */
+
+.project-item h3 {
+    color: #2A152A;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    flex: 1;
+}
+
+
+/* PROJECT ARROW */
+
+.project-arrow {
+    color: #641863;
+
+    font-size: 28px;
+
+    transition: 0.3s;
+}
+
+
+/* PROJECT HOVER */
+
+.project-item:hover {
+    transform: translateX(10px);
+
+    box-shadow: 0 10px 25px rgba(100, 24, 99, 0.15);
+}
+
+.project-item:hover .project-arrow {
+    transform: translateX(6px);
+}
+
+
+/* =========================================================
+   9. PROJECTS BUTTON
+========================================================= */
+
+.projects-button-container {
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+.projects-button {
+    display: inline-block;
+
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.projects-button:hover {
+    background-color: #4d124c;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   10. HOME WEB MAP
+========================================================= */
+
+.home-map {
+    background-color: #641863;
+
+    padding: 100px 10% 110px;
+
+    color: #ffffff;
+}
+
+
+/* WEB MAP HEADING */
+
+.map-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+/* WEB GIS */
+
+.map-heading > p:first-child {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+/* WEB MAP */
+
+.map-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* WEB MAP DESCRIPTION */
+
+.map-intro {
+    max-width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   11. LEAFLET MAP
+========================================================= */
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 8px;
+
+    background-color: #D9B9E2;
+
+    border-radius: 22px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+
+/* ACTUAL MAP */
+
+#homeMap {
+    width: 100%;
+    height: 500px;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   12. WEB MAP BUTTON
+========================================================= */
+
+.map-button-container {
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+.map-button {
+    display: inline-block;
+
+    background-color: #D9B9E2;
+    color: #641863;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.map-button:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   13. RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    /* NAVBAR */
+
+    .navbar {
+        height: auto;
+
+        padding: 25px 8%;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 8%;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* HERO IMAGE */
+
+    .hero-image {
+        width: 100%;
+
+        margin-top: 60px;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 350px;
+    }
+
+
+    /* ABOUT CARDS */
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+
+    /* PROJECTS */
+
+    .home-projects {
+        padding: 70px 8%;
+    }
+
+    .project-item {
+        padding: 22px 20px;
+    }
+
+    .project-number {
+        margin-right: 20px;
+    }
+
+    .project-item h3 {
+        font-size: 16px;
+    }
+
+
+    /* WEB MAP */
+
+    .home-map {
+        padding: 70px 8%;
+    }
+
+    #homeMap {
+        height: 350px;
+    }
+
+    .map-container {
+        padding: 6px;
+    }
+
+}
+
+
+/* =========================================================
+   14. SMALL MOBILE SCREENS
+========================================================= */
+
+@media (max-width: 550px) {
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .section-heading h2,
+    .projects-heading h2,
+    .map-heading h2 {
+        font-size: 30px;
+    }
+
+    .project-item {
+        padding: 20px 15px;
+    }
+
+    .project-number {
+        margin-right: 15px;
+    }
+
+    #homeMap {
+        height: 300px;
+    }
+
+}
+/* =========================================================
+   ABOUT & EXPERIENCE PAGE
+========================================================= */
+
+
+/* =========================================================
+   ABOUT PAGE HEADER
+========================================================= */
+
+.about-page-header {
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 90px 10%;
+
+    text-align: center;
+}
+
+.about-page-header > p:first-child {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.about-page-header h1 {
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+.about-page-subtitle {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ABOUT ME
+========================================================= */
+
+.about-me-section {
+    background-color: #D9B9E2;
+
+    padding: 100px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 80px;
+}
+
+
+/* ABOUT IMAGE */
+
+.about-me-image {
+    width: 38%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-image img {
+    width: 330px;
+    height: 410px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    border: 6px solid #641863;
+
+    box-shadow: 15px 15px 0 #641863;
+}
+
+
+/* ABOUT TEXT */
+
+.about-me-content {
+    width: 50%;
+}
+
+.about-small-title {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.about-me-content h2 {
+    color: #641863;
+
+    font-size: 36px;
+
+    margin-bottom: 25px;
+}
+
+.about-me-content p:not(.about-small-title) {
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-section {
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 100px 10%;
+}
+
+/* EDUCATION LIST */
+
+.education-list {
+    max-width: 950px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+/* EDUCATION CARD */
+
+.education-card {
+    width: 100%;
+    min-height: 220px;
+
+    background-color: #D9B9E2;
+    color: #2A152A;
+
+    padding: 40px 50px;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 50px;
+
+    transition: 0.3s;
+}
+
+/* REUSABLE DARK SECTION HEADING */
+
+.about-section-heading {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.about-section-heading p {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.about-section-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+}
+
+
+/* EDUCATION CARD */
+
+.education-card {
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    background-color: #D9B9E2;
+    color: #2A152A;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    gap: 50px;
+
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.20);
+}
+
+.education-year {
+    min-width: 150px;
+
+    color: #641863;
+
+    font-weight: bold;
+}
+
+.education-info h3 {
+    color: #641863;
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+.education-info h4 {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.education-info p {
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   TECHNICAL SKILLS
+========================================================= */
+
+.skills-section {
+    background-color: #D9B9E2;
+
+    padding: 100px 10%;
+}
+
+
+/* SKILLS HEADING */
+
+.skills-heading {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.skills-heading p {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.skills-heading h2 {
+    color: #641863;
+
+    font-size: 36px;
+}
+
+
+/* SKILLS GRID */
+
+.skills-grid {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* SKILL BOX */
+
+.skill-box {
+    background-color: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border-left: 6px solid #641863;
+
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 25px rgba(100, 24, 99, 0.15);
+}
+
+.skill-box h3 {
+    color: #641863;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+/* SKILL TAGS */
+
+.skill-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skill-tags span {
+    background-color: #D9B9E2;
+    color: #641863;
+
+    padding: 9px 15px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.experience-section {
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 100px 10% 120px;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/* VERTICAL LINE */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+
+    width: 3px;
+
+    background-color: #D9B9E2;
+}
+
+
+/* TIMELINE ITEM */
+
+.timeline-item {
+    position: relative;
+
+    padding-left: 55px;
+
+    margin-bottom: 35px;
+}
+
+
+/* TIMELINE DOT */
+
+.timeline-dot {
+    position: absolute;
+
+    left: 0;
+    top: 25px;
+
+    width: 23px;
+    height: 23px;
+
+    background-color: #D9B9E2;
+
+    border: 5px solid #ffffff;
+
+    border-radius: 50%;
+
+    z-index: 2;
+}
+
+
+/* TIMELINE CARD */
+
+.timeline-content {
+    background-color: #D9B9E2;
+    color: #2A152A;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+.timeline-content:hover {
+    transform: translateX(8px);
+}
+
+.timeline-content span {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.timeline-content h3 {
+    color: #641863;
+
+    font-size: 21px;
+
+    margin: 10px 0 12px;
+}
+
+.timeline-content p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ABOUT PAGE RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .about-page-header h1 {
+        font-size: 38px;
+    }
+
+
+    /* ABOUT ME */
+
+    .about-me-section {
+        flex-direction: column;
+
+        padding: 70px 8%;
+
+        gap: 60px;
+    }
+
+    .about-me-image,
+    .about-me-content {
+        width: 100%;
+    }
+
+    .about-me-content {
+        text-align: center;
+    }
+
+    .about-me-image img {
+        width: 280px;
+        height: 350px;
+    }
+
+
+    /* EDUCATION */
+
+    .education-section {
+        padding: 70px 8%;
+    }
+
+    .education-card {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    /* SKILLS */
+
+    .skills-section {
+        padding: 70px 8%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-section {
+        padding: 70px 8%;
+    }
+
+}
+.nav-links a.active {
+    color: #D9B9E2;
+    border-bottom: 2px solid #D9B9E2;
+    padding-bottom: 6px;
+}
+
+/* =========================================================
+   ABOUT PAGE - PROJECTS
+========================================================= */
+
+.about-projects-section {
+    background-color: #D9B9E2;
+    padding: 100px 10% 110px;
+}
+
+
+/* PROJECTS HEADING */
+
+.about-projects-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.about-projects-heading > p:first-child {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.about-projects-heading h2 {
+    color: #641863;
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+.about-projects-intro {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+
+/* PROJECT LIST */
+
+.about-projects-list {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* PROJECT CARD */
+
+.about-project-card {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 35px 40px;
+
+    border-radius: 20px;
+
+    border-left: 6px solid #641863;
+
+    display: flex;
+
+    gap: 35px;
+
+    transition: 0.3s;
+}
+
+.about-project-card:hover {
+    transform: translateX(8px);
+
+    box-shadow: 0 12px 25px rgba(100, 24, 99, 0.15);
+}
+
+
+/* PROJECT NUMBER */
+
+.about-project-number {
+    color: #641863;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding-top: 5px;
+}
+
+
+/* PROJECT CONTENT */
+
+.about-project-content {
+    flex: 1;
+}
+
+.about-project-content h3 {
+    color: #641863;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.about-project-content p {
+    color: #2A152A;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+}
+
+
+/* TECHNOLOGY TAGS */
+
+.project-technologies {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.project-technologies span {
+    background-color: #D9B9E2;
+    color: #641863;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* VIEW PROJECTS BUTTON */
+
+.about-project-button-container {
+    text-align: center;
+
+    margin-top: 45px;
+}
+
+.about-project-button {
+    display: inline-block;
+
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.about-project-button:hover {
+    background-color: #4d124c;
+
+    transform: translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .about-projects-section {
+        padding: 70px 8%;
+    }
+
+    .about-project-card {
+        padding: 30px 25px;
+
+        gap: 20px;
+    }
+
+}
+
+/* =========================================================
+   FOOTER / CONTACT
+========================================================= */
+
+.footer {
+    background-color: #D9B9E2;
+    color: #641863;
+
+    padding: 70px 10% 25px;
+
+    border-top: 3px solid #641863;
+}
+
+
+/* MAIN FOOTER CONTENT */
+
+.footer-content {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+
+    padding-bottom: 50px;
+}
+
+
+/* LEFT SIDE */
+
+.footer-left h2 {
+    color: #641863;
+
+    font-size: 28px;
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+}
+
+.footer-title {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-info p {
+    color: #2A152A;
+
+    margin-bottom: 12px;
+
+    font-size: 15px;
+}
+
+.contact-info strong {
+    color: #641863;
+}
+
+.contact-info a {
+    color: #2A152A;
+
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: #641863;
+}
+
+
+/* RIGHT SIDE */
+
+.footer-right {
+    text-align: center;
+}
+
+.footer-right > p {
+    color: #641863;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+/* SOCIAL MEDIA */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+/* SOCIAL BUTTON */
+
+.social-button {
+    width: 48px;
+    height: 48px;
+
+    background-color: #641863;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    background-color: #4d124c;
+
+    transform: translateY(-5px);
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(100, 24, 99, 0.3);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #641863;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FOOTER RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .footer {
+        padding: 60px 8% 25px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+}
+
+/* =========================================================
+   PROJECTS PAGE
+========================================================= */
+
+
+/* -------------------------
+   PROJECTS HEADER
+------------------------- */
+
+.projects-page-header {
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 90px 10%;
+
+    text-align: center;
+}
+
+
+.projects-page-header > p:first-child {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+.projects-page-header h1 {
+    color: #ffffff;
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+
+.projects-page-subtitle {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   PROJECTS SECTION
+========================================================= */
+
+.projects-page-section {
+    background-color: #D9B9E2;
+
+    padding: 100px 10% 110px;
+}
+
+
+.projects-page-container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-detail-card {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 45px 50px;
+
+    border-radius: 22px;
+
+    border-left: 7px solid #641863;
+
+    display: flex;
+
+    gap: 45px;
+
+    transition: 0.3s;
+}
+
+
+.project-detail-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(100, 24, 99, 0.16);
+}
+
+
+
+/* =========================================================
+   PROJECT NUMBER
+========================================================= */
+
+.project-detail-number {
+    color: #641863;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    padding-top: 5px;
+
+    min-width: 40px;
+}
+
+
+
+/* =========================================================
+   PROJECT CONTENT
+========================================================= */
+
+.project-detail-content {
+    flex: 1;
+}
+
+
+.project-category {
+    color: #641863;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+.project-detail-content h2 {
+    color: #641863;
+
+    font-size: 25px;
+
+    line-height: 1.35;
+
+    margin-bottom: 20px;
+}
+
+
+.project-description {
+    color: #2A152A;
+
+    font-size: 15.5px;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+}
+
+
+
+/* =========================================================
+   PROJECT TAGS
+========================================================= */
+
+.project-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-top: 25px;
+}
+
+
+.project-tags span {
+    background-color: #D9B9E2;
+
+    color: #641863;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+/* =========================================================
+   PROJECT AWARD
+========================================================= */
+
+.project-top-line {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.project-award {
+    background-color: #641863;
+
+    color: #ffffff;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .projects-page-header {
+        padding: 70px 8%;
+    }
+
+
+    .projects-page-header h1 {
+        font-size: 38px;
+    }
+
+
+    .projects-page-section {
+        padding: 70px 8%;
+    }
+
+
+    .project-detail-card {
+        padding: 30px 25px;
+
+        gap: 20px;
+    }
+
+
+    .project-detail-number {
+        font-size: 17px;
+
+        min-width: 30px;
+    }
+
+
+    .project-detail-content h2 {
+        font-size: 21px;
+    }
+
+
+    .project-top-line {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}
+
+/* =========================================================
+   PROJECT GALLERY
+========================================================= */
+
+.project-gallery-section {
+    background-color: #641863;
+
+    padding: 90px 10% 100px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   GALLERY HEADING
+========================================================= */
+
+.gallery-heading {
+    margin-bottom: 45px;
+}
+
+
+.gallery-heading > p:first-child {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.gallery-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.gallery-intro {
+    color: #ffffff;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GALLERY CONTAINER
+========================================================= */
+
+.gallery-container {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.gallery-images {
+    width: 100%;
+
+    background-color: #2A152A;
+
+    border: 5px solid #D9B9E2;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   EACH SLIDE
+========================================================= */
+
+.gallery-slide {
+    display: none;
+}
+
+
+.gallery-slide.active-slide {
+    display: block;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.gallery-slide img {
+    width: 100%;
+
+    height: 520px;
+
+    object-fit: contain;
+
+    display: block;
+
+    background-color: #2A152A;
+}
+
+
+/* =========================================================
+   CAPTION
+========================================================= */
+
+.gallery-caption {
+    background-color: #D9B9E2;
+
+    padding: 20px 25px;
+
+    text-align: center;
+}
+
+
+.gallery-caption h3 {
+    color: #641863;
+
+    font-size: 19px;
+
+    margin-bottom: 7px;
+}
+
+
+.gallery-caption p {
+    color: #2A152A;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   GALLERY ARROWS
+========================================================= */
+
+.gallery-arrow {
+    width: 52px;
+    height: 52px;
+
+    position: absolute;
+
+    top: 45%;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #D9B9E2;
+
+    color: #641863;
+
+    font-size: 27px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ARROW HOVER */
+
+.gallery-arrow:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-50%) scale(1.1);
+}
+
+
+/* LEFT ARROW */
+
+.gallery-prev {
+    left: 20px;
+}
+
+
+/* RIGHT ARROW */
+
+.gallery-next {
+    right: 20px;
+}
+
+
+/* =========================================================
+   GALLERY DOTS
+========================================================= */
+
+.gallery-dots {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 11px;
+}
+
+
+.gallery-dot {
+    width: 11px;
+    height: 11px;
+
+    background-color: rgba(217, 185, 226, 0.45);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.gallery-dot:hover {
+    background-color: #ffffff;
+}
+
+
+.gallery-dot.active-dot {
+    background-color: #D9B9E2;
+
+    transform: scale(1.35);
+}
+
+
+/* =========================================================
+   PROJECT GALLERY RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .project-gallery-section {
+        padding: 70px 8%;
+    }
+
+
+    .gallery-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .gallery-slide img {
+        height: 400px;
+    }
+
+
+    .gallery-arrow {
+        width: 42px;
+        height: 42px;
+
+        font-size: 21px;
+    }
+
+
+    .gallery-prev {
+        left: 10px;
+    }
+
+
+    .gallery-next {
+        right: 10px;
+    }
+
+
+    .gallery-caption {
+        padding: 18px 20px;
+    }
+
+
+    .gallery-caption h3 {
+        font-size: 17px;
+    }
+
+
+    .gallery-caption p {
+        font-size: 13px;
+    }
+
+}
+/* =========================================================
+   VOLUNTEERING SECTION
+========================================================= */
+
+.volunteering-section {
+    background-color: #641863;
+
+    color: #ffffff;
+
+    padding: 20px 10% 120px;
+}
+
+
+/* =========================================================
+   VOLUNTEERING HEADING
+========================================================= */
+
+.volunteering-heading {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.volunteering-heading p {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.volunteering-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+}
+
+
+/* =========================================================
+   VOLUNTEERING TIMELINE
+========================================================= */
+
+.volunteering-timeline {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/* VERTICAL LINE */
+
+.volunteering-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 10px;
+
+    top: 10px;
+    bottom: 10px;
+
+    width: 3px;
+
+    background-color: #D9B9E2;
+}
+
+
+/* =========================================================
+   TIMELINE ITEM
+========================================================= */
+
+.volunteer-item {
+    position: relative;
+
+    padding-left: 55px;
+
+    margin-bottom: 35px;
+}
+
+
+/* Remove extra space after final item */
+
+.volunteer-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   TIMELINE DOT
+========================================================= */
+
+.volunteer-dot {
+    position: absolute;
+
+    left: 0;
+    top: 25px;
+
+    width: 23px;
+    height: 23px;
+
+    background-color: #D9B9E2;
+
+    border: 5px solid #ffffff;
+
+    border-radius: 50%;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   VOLUNTEERING CARD
+========================================================= */
+
+.volunteer-content {
+    background-color: #D9B9E2;
+
+    color: #2A152A;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER EFFECT */
+
+.volunteer-content:hover {
+    transform: translateX(8px);
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.volunteer-content span {
+    display: block;
+
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.volunteer-content h3 {
+    color: #641863;
+
+    font-size: 21px;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.volunteer-content p {
+    color: #2A152A;
+
+    line-height: 1.7;
+
+    margin-bottom: 8px;
+}
+
+
+.volunteer-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+.volunteer-content strong {
+    color: #2A152A;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .volunteering-section {
+        padding: 30px 8% 80px;
+    }
+
+
+    .volunteering-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .volunteering-timeline::before {
+        left: 8px;
+    }
+
+
+    .volunteer-item {
+        padding-left: 45px;
+    }
+
+
+    .volunteer-dot {
+        left: -2px;
+
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .volunteer-content {
+        padding: 25px;
+    }
+
+
+    .volunteer-content h3 {
+        font-size: 19px;
+    }
+
+}
+/* =========================================================
+   EXPERIENCE DETAIL BUTTON
+========================================================= */
+
+.experience-detail-button {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 11px 20px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.experience-detail-button:hover {
+    background-color: #4d124c;
+
+    transform: translateX(5px);
+}
+/* =========================================================
+   GEOCAREER PAGE
+========================================================= */
+
+
+/* HEADER */
+
+.geocareer-header {
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 90px 10%;
+
+    text-align: center;
+}
+
+
+.geocareer-header > p:first-child {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+.geocareer-header h1 {
+    color: #ffffff;
+
+    font-size: 52px;
+
+    margin-bottom: 18px;
+}
+
+
+.geocareer-header-subtitle {
+    color: #D9B9E2;
+
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+
+
+/* =========================================================
+   POSTER SECTION
+========================================================= */
+
+.geocareer-poster-section {
+    background-color: #D9B9E2;
+
+    padding: 90px 10% 110px;
+
+    text-align: center;
+}
+
+
+/* SECTION HEADING */
+
+.geocareer-section-heading {
+    margin-bottom: 45px;
+}
+
+
+.geocareer-section-heading p {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.geocareer-section-heading h2 {
+    color: #641863;
+
+    font-size: 36px;
+}
+
+
+
+/* =========================================================
+   POSTER
+========================================================= */
+
+.geocareer-poster {
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+
+.geocareer-poster img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 22px;
+
+    border: 5px solid #641863;
+
+    box-shadow: 15px 15px 0 #641863;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .geocareer-header {
+        padding: 70px 8%;
+    }
+
+
+    .geocareer-header h1 {
+        font-size: 40px;
+    }
+
+
+    .geocareer-poster-section {
+        padding: 70px 8% 90px;
+    }
+
+
+    .geocareer-section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .geocareer-poster {
+        max-width: 500px;
+    }
+
+}
+/* =========================================================
+   GEOCAREER - ABOUT THE EVENT
+========================================================= */
+
+.geocareer-about {
+    background-color: #641863;
+
+    padding: 100px 10%;
+}
+
+
+.geocareer-about-container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.geocareer-text-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.geocareer-text-heading p {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.geocareer-text-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+}
+
+
+/* TEXT */
+
+.geocareer-about-text {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.geocareer-about-text p {
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* =========================================================
+   GEOCAREER - MY ROLE
+========================================================= */
+
+.geocareer-role {
+    background-color: #D9B9E2;
+
+    padding: 100px 10% 110px;
+}
+
+
+.geocareer-role-container {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* ROLE HEADING */
+
+.geocareer-role-heading {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.geocareer-role-heading > p {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.geocareer-role-heading h2 {
+    color: #641863;
+
+    font-size: 38px;
+}
+
+
+/* ROLE DESCRIPTION */
+
+.geocareer-role-description {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.geocareer-role-description p {
+    color: #2A152A;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+    margin-bottom: 17px;
+}
+
+
+
+/* =========================================================
+   RESPONSIBILITIES
+========================================================= */
+
+.responsibilities-heading {
+    text-align: center;
+
+    margin-top: 60px;
+
+    margin-bottom: 25px;
+}
+
+
+.responsibilities-heading p {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+/* RESPONSIBILITY GRID */
+
+.responsibilities-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* RESPONSIBILITY CARD */
+
+.responsibility-card {
+    background-color: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border-left: 6px solid #641863;
+
+    transition: 0.3s;
+}
+
+
+.responsibility-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 25px rgba(100, 24, 99, 0.15);
+}
+
+
+/* NUMBER */
+
+.responsibility-number {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TITLE */
+
+.responsibility-card h3 {
+    color: #641863;
+
+    font-size: 20px;
+
+    margin-bottom: 13px;
+}
+
+
+/* DESCRIPTION */
+
+.responsibility-card p {
+    color: #2A152A;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================================
+   GEOCAREER RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .geocareer-about {
+        padding: 70px 8%;
+    }
+
+
+    .geocareer-text-heading h2 {
+        font-size: 31px;
+    }
+
+
+    .geocareer-role {
+        padding: 70px 8%;
+    }
+
+
+    .geocareer-role-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .responsibilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .responsibility-card {
+        padding: 30px 25px;
+    }
+
+}
+/* =========================================================
+   GEOCAREER GALLERY
+========================================================= */
+
+.geocareer-gallery-section {
+    background-color: #641863;
+
+    padding: 100px 10% 90px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   GALLERY HEADING
+========================================================= */
+
+.geocareer-gallery-heading {
+    margin-bottom: 45px;
+}
+
+
+.geocareer-gallery-heading > p:first-child {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.geocareer-gallery-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.geocareer-gallery-intro {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GALLERY CONTAINER
+========================================================= */
+
+.geocareer-gallery-container {
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   IMAGE BOX
+========================================================= */
+
+.geocareer-gallery-images {
+    width: 100%;
+
+    background-color: #2A152A;
+
+    border: 5px solid #D9B9E2;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   SLIDES
+========================================================= */
+
+.geocareer-gallery-slide {
+    display: none;
+}
+
+
+.geocareer-gallery-slide.active-geocareer-slide {
+    display: block;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.geocareer-gallery-slide img {
+    width: 100%;
+
+    height: 560px;
+
+    object-fit: contain;
+
+    display: block;
+
+    background-color: #2A152A;
+}
+
+
+/* =========================================================
+   CAPTION
+========================================================= */
+
+.geocareer-gallery-caption {
+    background-color: #D9B9E2;
+
+    padding: 20px 25px;
+}
+
+
+.geocareer-gallery-caption h3 {
+    color: #641863;
+
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+
+.geocareer-gallery-caption p {
+    color: #2A152A;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.geocareer-gallery-arrow {
+    position: absolute;
+
+    top: 45%;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #D9B9E2;
+
+    color: #641863;
+
+    font-size: 27px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.geocareer-gallery-arrow:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-50%) scale(1.1);
+}
+
+
+/* LEFT */
+
+.geocareer-gallery-prev {
+    left: 20px;
+}
+
+
+/* RIGHT */
+
+.geocareer-gallery-next {
+    right: 20px;
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.geocareer-gallery-dots {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.geocareer-gallery-dot {
+    width: 11px;
+    height: 11px;
+
+    background-color: rgba(217, 185, 226, 0.45);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.geocareer-gallery-dot:hover {
+    background-color: #ffffff;
+}
+
+
+.geocareer-gallery-dot.active-geocareer-dot {
+    background-color: #D9B9E2;
+
+    transform: scale(1.4);
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.geocareer-back-container {
+    margin-top: 55px;
+}
+
+
+.geocareer-back-button {
+    display: inline-block;
+
+    background-color: #D9B9E2;
+
+    color: #641863;
+
+    padding: 14px 27px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.geocareer-back-button:hover {
+    background-color: #ffffff;
+
+    transform: translateX(-5px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .geocareer-gallery-section {
+        padding: 70px 8%;
+    }
+
+
+    .geocareer-gallery-heading h2 {
+        font-size: 31px;
+    }
+
+
+    .geocareer-gallery-slide img {
+        height: 400px;
+    }
+
+
+    .geocareer-gallery-arrow {
+        width: 42px;
+        height: 42px;
+
+        font-size: 21px;
+    }
+
+
+    .geocareer-gallery-prev {
+        left: 10px;
+    }
+
+
+    .geocareer-gallery-next {
+        right: 10px;
+    }
+
+
+    .geocareer-gallery-caption {
+        padding: 18px 20px;
+    }
+
+
+    .geocareer-gallery-caption h3 {
+        font-size: 18px;
+    }
+
+
+    .geocareer-gallery-dots {
+        gap: 9px;
+    }
+
+
+    .geocareer-gallery-dot {
+        width: 9px;
+        height: 9px;
+    }
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.uykun-logo-icon {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+
+    display: block;
+}
+/* =========================================================
+   NAVBAR FIX
+========================================================= */
+
+.navbar {
+    width: 100%;
+    height: 85px;
+
+    background-color: #641863;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 2px solid #D9B9E2;
+}
+
+
+/* UYKUN */
+
+.navbar .logo {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 5px;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+
+/* MENU */
+
+.navbar .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 40px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar .nav-links li {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar .nav-links a {
+    display: inline-block;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    padding: 6px 0;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.3s;
+}
+
+
+.navbar .nav-links a:hover {
+    color: #D9B9E2;
+}
+
+
+.navbar .nav-links a.active {
+    color: #D9B9E2;
+    border-bottom-color: #D9B9E2;
+}
+
+
+/* =========================================================
+   NAVBAR RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px 6%;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    .navbar .nav-links {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px 22px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar .logo {
+        font-size: 23px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 10px 18px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 14px;
+    }
+}
+/* =========================================================
+   PINK LAPTOP
+========================================================= */
+
+.laptop-sticker {
+    width: 190px;
+    height: auto;
+
+    right: -200px;
+    top: 90px;
+
+    transform: rotate(-8deg);
+}
+
+
+/* =========================================================
+   DISCO BALL
+========================================================= */
+
+.disco-sticker {
+    width: 110px;
+    height: 110px;
+
+    right: -155px;
+    top: 285px;
+
+    border-radius: 50%;
+
+    transform: rotate(8deg);
+}
+/* =========================================================
+   HERO PHOTO + SMALL STICKERS
+========================================================= */
+
+.hero-image {
+    width: 38%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: visible;
+}
+
+
+/* PROFILE PHOTO */
+
+.hero-image .profile-photo {
+    width: 360px;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+    border: 6px solid #641863;
+
+    box-shadow: 15px 15px 0 #641863;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   DECORATIONS
+========================================================= */
+
+.hero-decorations {
+    position: absolute;
+
+    /* Fotoğrafın sağ tarafı */
+    left: calc(50% + 205px);
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 18px;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/* LAPTOP */
+
+.hero-decorations .laptop-sticker {
+    position: static;
+
+    width: 120px;
+    height: auto;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    transform: rotate(5deg);
+
+    /* Beyaz arka planı açık mor zemine karıştır */
+    mix-blend-mode: multiply;
+
+    filter: drop-shadow(
+        0 5px 5px rgba(100, 24, 99, 0.18)
+    );
+}
+
+
+/* DISCO BALL */
+
+.hero-decorations .disco-sticker {
+    position: static;
+
+    width: 85px;
+    height: 85px;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+
+    transform: rotate(-7deg);
+
+    /* Beyaz arka planı açık mor zemine karıştır */
+    mix-blend-mode: multiply;
+
+    filter: drop-shadow(
+        0 5px 5px rgba(100, 24, 99, 0.18)
+    );
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .hero-decorations {
+        left: calc(50% + 155px);
+
+        width: 90px;
+
+        gap: 12px;
+    }
+
+    .hero-decorations .laptop-sticker {
+        width: 90px;
+    }
+
+    .hero-decorations .disco-sticker {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .hero-decorations {
+        display: none;
+    }
+}
+/* =========================================================
+   HERO STICKERS
+========================================================= */
+
+.hero-image {
+    position: relative;
+    overflow: visible;
+}
+
+
+/* Stickerların bulunduğu alan */
+
+.hero-decorations {
+    position: absolute;
+
+    /* Fotoğrafın sağ tarafına yerleştir */
+    left: calc(50% + 215px);
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 115px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 5;
+
+    pointer-events: none;
+}
+
+
+/* LAPTOP */
+
+.hero-decorations .laptop-sticker {
+    width: 105px;
+    height: auto;
+
+    object-fit: contain;
+
+    /* Fotoğrafın kendi çerçevesini sticker'a uygulamasın */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    position: static;
+
+    transform: rotate(6deg);
+
+    mix-blend-mode: multiply;
+
+    filter: drop-shadow(
+        0 5px 5px rgba(100, 24, 99, 0.18)
+    );
+}
+
+
+/* DISKO TOPU */
+
+.hero-decorations .disco-sticker {
+    width: 90px;
+    height: auto;
+
+    object-fit: contain;
+
+    /* Fotoğrafın kendi çerçevesini sticker'a uygulamasın */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    position: static;
+
+    transform: rotate(-4deg);
+
+    mix-blend-mode: multiply;
+
+    filter: drop-shadow(
+        0 5px 5px rgba(100, 24, 99, 0.18)
+    );
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+    .hero-decorations {
+        left: calc(50% + 165px);
+        width: 90px;
+    }
+
+    .hero-decorations .laptop-sticker {
+        width: 80px;
+    }
+
+    .hero-decorations .disco-sticker {
+        width: 70px;
+    }
+}
+
+
+/* TELEFON */
+
+@media (max-width: 550px) {
+
+    .hero-decorations {
+        display: none;
+    }
+}
+/* =========================================================
+   WEB MAPS PAGE
+========================================================= */
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.webmap-page-header {
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 90px 10%;
+
+    text-align: center;
+}
+
+.webmap-small-title {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.webmap-page-header h1 {
+    color: #ffffff;
+
+    font-size: 52px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.webmap-header-text {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAP SECTION
+========================================================= */
+
+.webmap-section {
+    background-color: #D9B9E2;
+
+    padding: 90px 8% 110px;
+}
+
+
+/* SECTION HEADING */
+
+.webmap-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.webmap-heading > p:first-child {
+    color: #641863;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.webmap-heading h2 {
+    color: #641863;
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.webmap-description {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #2A152A;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   WEB GIS APPLICATION
+========================================================= */
+
+.webmap-app {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT CONTROL PANEL
+========================================================= */
+
+.webmap-panel {
+    background-color: #641863;
+
+    padding: 32px 25px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(100, 24, 99, 0.18);
+}
+
+
+/* PANEL TITLE */
+
+.webmap-panel-title {
+    margin-bottom: 28px;
+}
+
+.webmap-panel-title span {
+    display: block;
+
+    color: #D9B9E2;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+}
+
+.webmap-panel-title h3 {
+    color: #ffffff;
+
+    font-size: 27px;
+}
+
+
+/* =========================================================
+   LOCATION CARDS
+========================================================= */
+
+.webmap-location-card {
+    width: 100%;
+
+    min-height: 95px;
+
+    background-color: #ffffff;
+
+    border: none;
+    border-left: 5px solid #D9B9E2;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 14px;
+
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    align-items: center;
+
+    gap: 14px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.webmap-location-card:hover {
+    transform: translateX(6px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(0, 0, 0, 0.16);
+}
+
+
+/* ACTIVE CITY */
+
+.webmap-location-card.active-location {
+    background-color: #D9B9E2;
+
+    border-left-color: #ffffff;
+
+    transform: translateX(6px);
+}
+
+
+/* LOCATION NUMBER */
+
+.location-number {
+    color: #641863;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* LOCATION TEXT */
+
+.webmap-location-card h4 {
+    color: #641863;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+.webmap-location-card p {
+    color: #2A152A;
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    margin: 0;
+}
+
+
+/* ARROW */
+
+.location-arrow {
+    color: #641863;
+
+    font-size: 23px;
+
+    transition: 0.3s;
+}
+
+.webmap-location-card:hover .location-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   RESET BUTTON
+========================================================= */
+
+.webmap-reset-button {
+    width: 100%;
+
+    background-color: #D9B9E2;
+    color: #641863;
+
+    border: none;
+
+    padding: 14px 20px;
+
+    margin-top: 8px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.webmap-reset-button:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   COORDINATE BOX
+========================================================= */
+
+.webmap-coordinate-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background-color:
+        rgba(217, 185, 226, 0.12);
+
+    border: 1px solid
+        rgba(217, 185, 226, 0.4);
+
+    border-radius: 14px;
+}
+
+.webmap-coordinate-box span {
+    display: block;
+
+    color: #D9B9E2;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.webmap-coordinate-box p {
+    color: #ffffff;
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
+.webmap-map-wrapper {
+    position: relative;
+
+    width: 100%;
+    height: 610px;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 5px solid #641863;
+
+    border-radius: 22px;
+
+    box-shadow:
+        12px 12px 0
+        rgba(100, 24, 99, 0.15);
+}
+
+
+/* IMPORTANT:
+   Leaflet needs an explicit height.
+*/
+
+#portfolioMap {
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   MAP BADGE
+========================================================= */
+
+.webmap-map-badge {
+    position: absolute;
+
+    right: 18px;
+    bottom: 18px;
+
+    z-index: 500;
+
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 10px 17px;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.2);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CUSTOM PURPLE MARKER
+========================================================= */
+
+.custom-map-marker {
+    background: transparent;
+    border: none;
+}
+
+
+/* PIN */
+
+.custom-marker-pin {
+    width: 34px;
+    height: 34px;
+
+    background-color: #641863;
+
+    border: 4px solid #ffffff;
+
+    border-radius:
+        50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+
+    box-shadow:
+        0 5px 12px
+        rgba(42, 21, 42, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* INNER CIRCLE */
+
+.custom-marker-center {
+    width: 10px;
+    height: 10px;
+
+    background-color: #D9B9E2;
+
+    border-radius: 50%;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   LEAFLET POPUP
+========================================================= */
+
+.portfolio-popup {
+    min-width: 210px;
+
+    padding: 5px;
+}
+
+.popup-small-title {
+    display: block;
+
+    color: #641863;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+.portfolio-popup h3 {
+    color: #641863;
+
+    font-size: 18px;
+
+    margin: 0 0 5px;
+}
+
+.portfolio-popup .popup-location {
+    color: #641863;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.portfolio-popup p {
+    color: #2A152A;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    margin-top: 0;
+}
+
+
+/* Popup corners */
+
+.leaflet-popup-content-wrapper {
+    border-radius: 15px;
+}
+
+
+/* Zoom buttons */
+
+.leaflet-control-zoom a {
+    color: #641863 !important;
+}
+
+
+/* =========================================================
+   ABOUT THIS MAP
+========================================================= */
+
+.webmap-about {
+    background-color: #641863;
+
+    padding: 100px 10%;
+}
+
+
+/* HEADING */
+
+.webmap-about-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.webmap-about-heading p {
+    color: #D9B9E2;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+.webmap-about-heading h2 {
+    color: #ffffff;
+
+    font-size: 36px;
+}
+
+
+/* INFO GRID */
+
+.webmap-about-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* INFO CARD */
+
+.webmap-info-card {
+    background-color: #D9B9E2;
+    color: #2A152A;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.webmap-info-card:hover {
+    transform: translateY(-7px);
+}
+
+.webmap-info-card span {
+    display: block;
+
+    color: #641863;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.webmap-info-card h3 {
+    color: #641863;
+
+    font-size: 21px;
+
+    margin-bottom: 13px;
+}
+
+.webmap-info-card p {
+    color: #2A152A;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .webmap-app {
+        grid-template-columns: 1fr;
+    }
+
+    .webmap-panel {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .webmap-panel-title,
+    .webmap-reset-button,
+    .webmap-coordinate-box {
+        grid-column: 1 / -1;
+    }
+
+    .webmap-location-card {
+        margin-bottom: 0;
+    }
+
+    .webmap-map-wrapper {
+        height: 550px;
+    }
+
+    .webmap-about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .webmap-page-header {
+        padding: 70px 8%;
+    }
+
+    .webmap-page-header h1 {
+        font-size: 38px;
+    }
+
+    .webmap-section {
+        padding:
+            70px 5%
+            85px;
+    }
+
+    .webmap-heading h2 {
+        font-size: 31px;
+    }
+
+    .webmap-panel {
+        display: block;
+
+        padding: 25px 18px;
+    }
+
+    .webmap-location-card {
+        margin-bottom: 12px;
+    }
+
+    .webmap-map-wrapper {
+        height: 480px;
+
+        border-width: 4px;
+
+        box-shadow:
+            7px 7px 0
+            rgba(100, 24, 99, 0.15);
+    }
+
+    .webmap-map-badge {
+        right: 10px;
+        bottom: 10px;
+
+        font-size: 9px;
+
+        padding: 8px 12px;
+    }
+
+    .webmap-about {
+        padding: 75px 8%;
+    }
+
+    .webmap-about-heading h2 {
+        font-size: 31px;
+    }
+
+    .webmap-info-card {
+        padding: 28px;
+    }
+}
+/* =========================================================
+   UYKUN - RESPONSIVE SYSTEM V1
+   HOME PAGE
+   ========================================================= */
+
+/* Prevent accidental horizontal scrolling */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        height: auto;
+        min-height: 80px;
+
+        padding: 20px 6%;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    .navbar .logo {
+        font-size: 25px;
+    }
+
+    .navbar .nav-links {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 25px;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: auto;
+
+        padding: 70px 7% 80px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 60px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero-description {
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+    }
+
+
+    /* ---------- HERO IMAGE ---------- */
+
+    .hero-image {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    .hero-image .profile-photo {
+        width: 330px;
+        height: 400px;
+
+        object-fit: cover;
+    }
+
+
+    /* ---------- HOME CARDS ---------- */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- HOME PROJECTS ---------- */
+
+    .project-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    /* ---------- HOME MAP ---------- */
+
+    .home-map-container,
+    .map-container {
+        width: 100%;
+    }
+
+    #homeMap {
+        width: 100%;
+        min-height: 430px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-content {
+        gap: 50px;
+    }
+}
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* ---------- GENERAL ---------- */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar {
+        min-height: 75px;
+
+        padding: 18px 22px;
+
+        gap: 15px;
+    }
+
+    .navbar .logo {
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+
+    .navbar .nav-links {
+        gap: 10px 18px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 13px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        padding: 55px 22px 70px;
+
+        gap: 50px;
+    }
+
+    .small-title {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 12vw, 48px);
+
+        line-height: 1.05;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+
+        line-height: 1.4;
+    }
+
+    .hero-description {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+    .about-button {
+        padding: 13px 24px;
+
+        font-size: 14px;
+    }
+
+
+    /* ---------- PROFILE ---------- */
+
+    .hero-image {
+        width: 100%;
+
+        padding: 0 25px;
+    }
+
+    .hero-image .profile-photo {
+        width: min(280px, 78vw);
+        height: auto;
+        aspect-ratio: 360 / 430;
+
+        object-fit: cover;
+
+        border-width: 5px;
+
+        box-shadow: 10px 10px 0 #641863;
+    }
+
+
+    /* ---------- STICKERS ---------- */
+
+    .hero-decorations {
+        display: block !important;
+    }
+
+    .hero-image .laptop-sticker {
+        display: block !important;
+
+        width: 85px !important;
+        height: auto !important;
+
+        position: absolute;
+
+        left: 2px;
+        bottom: 20px;
+
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+
+        object-fit: contain;
+
+        z-index: 3;
+    }
+
+    .hero-image .disco-sticker {
+        display: block !important;
+
+        width: 75px !important;
+        height: auto !important;
+
+        position: absolute;
+
+        right: 0;
+        top: -25px;
+
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+
+        object-fit: contain;
+
+        z-index: 3;
+    }
+
+
+    /* ---------- SECTION SPACING ---------- */
+
+    .about-summary,
+    .projects-summary,
+    .home-map-section {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+
+    /* ---------- CARDS ---------- */
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .project-item {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .project-item h3,
+    .project-item p {
+        overflow-wrap: anywhere;
+    }
+
+
+    /* ---------- MAP ---------- */
+
+    #homeMap {
+        width: 100%;
+
+        height: 380px;
+        min-height: 380px;
+
+        border-radius: 18px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-info a {
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+/* =========================================================
+   WEB MAP - PHOTO GALLERY POPUP
+========================================================= */
+
+.photo-popup {
+    width: 280px;
+    overflow: hidden;
+}
+
+
+/* GALLERY */
+
+.map-gallery {
+    position: relative;
+    width: 100%;
+    height: 185px;
+    overflow: hidden;
+    border-radius: 14px 14px 0 0;
+    background: #2A152A;
+}
+
+
+/* PHOTO */
+
+.map-gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* LEFT / RIGHT BUTTONS */
+
+.map-gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(100, 24, 99, 0.88);
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.map-gallery-arrow:hover {
+    background: #641863;
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+.map-gallery-prev {
+    left: 10px;
+}
+
+
+.map-gallery-next {
+    right: 10px;
+}
+
+
+/* PHOTO COUNTER */
+
+.map-gallery-counter {
+    position: absolute;
+
+    bottom: 9px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(42, 21, 42, 0.8);
+    color: white;
+
+    padding: 4px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* TEXT AREA */
+
+.map-popup-content {
+    padding: 14px 4px 4px;
+}
+
+
+.photo-popup .popup-small-title {
+    display: block;
+
+    color: #641863;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+.photo-popup h3 {
+    color: #2A152A;
+
+    font-size: 20px;
+
+    margin: 0 0 3px;
+}
+
+
+.photo-popup .popup-location {
+    color: #641863;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    margin: 0 0 8px;
+}
+
+
+.photo-popup .popup-description {
+    color: #2A152A;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* LEAFLET POPUP */
+
+#portfolioMap .leaflet-popup-content {
+    margin: 12px;
+}
+
+
+#portfolioMap .leaflet-popup-content-wrapper {
+    border-radius: 18px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .photo-popup {
+        width: 240px;
+    }
+
+    .map-gallery {
+        height: 155px;
+    }
+
+    .map-gallery-arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+}
+
+/* =========================================================
+   WEB MAP - SAME HEIGHT PANEL & MAP
+========================================================= */
+
+.webmap-app {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+
+    /* Sol panel ve harita aynı yüksekliğe uzasın */
+    align-items: stretch;
+}
+
+
+/* LOCATIONS / MY JOURNEY PANEL */
+
+.webmap-panel {
+    height: 700px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+
+/* MAP FRAME */
+
+.webmap-map-wrapper {
+    height: 700px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* LEAFLET MAP */
+
+#portfolioMap {
+    width: 100%;
+    height: 100% !important;
+}
+
+
+/* TABLET & MOBILE */
+
+@media (max-width: 950px) {
+
+    .webmap-app {
+        grid-template-columns: 1fr;
+    }
+
+    .webmap-panel {
+        height: auto;
+        overflow-y: visible;
+    }
+
+    .webmap-map-wrapper {
+        height: 550px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .webmap-map-wrapper {
+        height: 480px;
+    }
+
+}
+
+/* =========================================
+   WEB MAP GALLERY - CLEAN VERSION
+========================================= */
+
+.portfolio-popup {
+    width: 280px;
+}
+
+/* Büyük fotoğraf */
+.map-gallery-main {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-top: 10px;
+    background: #eee;
+}
+
+.map-gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Thumbnail alanı */
+.map-gallery-thumbnails {
+    display: flex;
+    gap: 6px;
+    margin-top: 7px;
+    overflow-x: auto;
+    padding-bottom: 3px;
+}
+
+/* Küçük fotoğraflar */
+.map-gallery-thumbnails img {
+    width: 52px;
+    height: 42px;
+    flex: 0 0 52px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+.map-gallery-thumbnails img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Leaflet popup */
+.leaflet-popup-content {
+    margin: 12px !important;
+    width: 280px !important;
+}
+
+/* Popup'ın beyaz kutusu */
+.leaflet-popup-content-wrapper {
+    border-radius: 16px !important;
+}
+
+/* Telefon */
+@media (max-width: 600px) {
+
+    .portfolio-popup {
+        width: 240px;
+    }
+
+    .leaflet-popup-content {
+        width: 240px !important;
+    }
+
+    .map-gallery-main {
+        height: 165px;
+    }
+
+    .map-gallery-thumbnails img {
+        width: 46px;
+        height: 38px;
+        flex-basis: 46px;
+    }
+}
+/* =========================================
+   WEB MAP - BALANCED LAYOUT
+========================================= */
+
+.webmap-app {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 25px;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   LEFT LOCATIONS PANEL
+========================================= */
+
+.webmap-panel {
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 22px;
+
+    overflow: hidden;
+}
+
+
+/* Locations title */
+
+.webmap-panel h3 {
+    margin: 0 0 14px;
+}
+
+
+/* Location cards */
+
+.location-card {
+    padding: 11px 14px;
+    margin-bottom: 8px;
+
+    flex-shrink: 0;
+}
+
+
+/* Location card text */
+
+.location-card h4 {
+    margin: 0 0 3px;
+    font-size: 15px;
+}
+
+.location-card p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+
+/* View All Locations button */
+
+#showTurkey,
+#showAll {
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+
+/* Coordinate area */
+
+.coordinate-box,
+#coordinateDisplay {
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.webmap-map-wrapper {
+    height: 600px;
+    min-height: 600px;
+}
+
+#portfolioMap {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .webmap-app {
+        grid-template-columns: 1fr;
+    }
+
+    .webmap-panel {
+        height: auto;
+    }
+
+    .webmap-map-wrapper {
+        height: 520px;
+        min-height: 520px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .webmap-map-wrapper {
+        height: 430px;
+        min-height: 430px;
+    }
+
+}
+/* =========================================================
+   WEB MAP - FINAL HEIGHT FIX
+   My Journey içeriğinin tamamı görünür.
+   Harita otomatik olarak panel ile aynı yüksekliğe gelir.
+========================================================= */
+
+@media (min-width: 951px) {
+
+    .webmap-app {
+        display: grid;
+        grid-template-columns: 320px minmax(0, 1fr);
+        gap: 25px;
+        align-items: stretch;
+    }
+
+    /* SOL PANEL:
+       sabit yükseklik yok, içerik ne kadarsa o kadar büyür */
+    .webmap-panel {
+        height: auto !important;
+        min-height: 0 !important;
+
+        overflow: visible !important;
+
+        display: block;
+
+        padding: 32px 25px;
+    }
+
+    /* Şehir kartlarının mevcut güzel boyutlarını koruyoruz */
+    .webmap-location-card {
+        min-height: 95px;
+        padding: 18px;
+        margin-bottom: 14px;
+    }
+
+    /* SAĞ TARAF:
+       Grid sayesinde sol panel kadar uzar */
+    .webmap-map-wrapper {
+        height: auto !important;
+        min-height: 0 !important;
+
+        align-self: stretch;
+    }
+
+    /* Leaflet bütün çerçeveyi doldurur */
+    #portfolioMap {
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100% !important;
+    }
+}
+/* =========================================================
+   OPENLAYERS MAP
+========================================================= */
+
+.openlayers-section {
+    background-color: #641863;
+    padding: 90px 8% 110px;
+}
+
+.openlayers-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.openlayers-heading > p:first-child {
+    color: #D9B9E2;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.openlayers-heading h2 {
+    color: #ffffff;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.openlayers-description {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.openlayers-map-wrapper {
+    position: relative;
+
+    width: 100%;
+    max-width: 1300px;
+    height: 520px;
+
+    margin: 0 auto;
+
+    background-color: #ffffff;
+
+    border: 5px solid #D9B9E2;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        12px 12px 0
+        rgba(217, 185, 226, 0.20);
+}
+
+#openlayersMap {
+    width: 100%;
+    height: 100%;
+}
+
+.openlayers-badge {
+    position: absolute;
+
+    right: 18px;
+    bottom: 18px;
+
+    z-index: 10;
+
+    background-color: #641863;
+    color: #ffffff;
+
+    padding: 10px 17px;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    pointer-events: none;
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+    .openlayers-map-wrapper {
+        height: 450px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .openlayers-section {
+        padding: 70px 5% 85px;
+    }
+
+    .openlayers-heading h2 {
+        font-size: 31px;
+    }
+
+    .openlayers-map-wrapper {
+        height: 380px;
+        border-width: 4px;
+    }
+
+    .openlayers-badge {
+        right: 10px;
+        bottom: 10px;
+
+        padding: 8px 12px;
+
+        font-size: 9px;
+    }
+
+}
+/* =========================================================
+   PROJECT OVERVIEW TABLE
+========================================================= */
+
+.project-table-section {
+    padding: 90px 8%;
+    background-color: #D9B9E2;
+}
+
+.project-table-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.project-table-heading > p:first-child {
+    color: #641863;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.project-table-heading h2 {
+    color: #641863;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.project-table-heading > p:last-child {
+    color: #2A152A;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.project-table-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(42, 21, 42, 0.15);
+}
+
+.project-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.project-table thead {
+    background-color: #641863;
+    color: #ffffff;
+}
+
+.project-table th {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.project-table td {
+    padding: 15px 20px;
+    color: #2A152A;
+    border-bottom: 1px solid #eadbea;
+    vertical-align: middle;
+}
+
+.project-table tbody tr {
+    transition: background-color 0.25s ease;
+}
+
+.project-table tbody tr:hover {
+    background-color: #f8eff8;
+}
+
+
+/* Project name + small image */
+
+.project-table-project {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    color: #641863;
+}
+
+.project-table-project img {
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .project-table-section {
+        padding: 65px 5%;
+    }
+
+    .project-table-heading h2 {
+        font-size: 30px;
+    }
+
+    .project-table-wrapper {
+        border-radius: 14px;
+    }
+
+}

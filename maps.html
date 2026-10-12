@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Web Maps | Uykun</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <!-- OpenLayers CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/ol@10.6.1/ol.css"
+>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+        UYKUN
+    </a>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About & Experience
+            </a>
+        </li>
+
+        <li>
+            <a href="projects.html">
+                Projects
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="maps.html"
+                class="active"
+            >
+                Web Maps
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="webmap-page-header">
+
+    <p class="webmap-small-title">
+        WEB GIS
+    </p>
+
+    <h1>
+        Interactive Web Map
+    </h1>
+
+    <p class="webmap-header-text">
+        Explore the cities that have played an important
+        role in my personal and academic journey.
+    </p>
+
+</header>
+
+
+<!-- =====================================================
+     MAP APPLICATION
+===================================================== -->
+
+<main class="webmap-section">
+
+    <div class="webmap-heading">
+
+        <p>
+            EXPLORE THE MAP
+        </p>
+
+        <h2>
+            My Journey
+        </h2>
+
+        <p class="webmap-description">
+            Select a location or explore the map freely.
+            Click anywhere on the map to view its coordinates.
+        </p>
+
+    </div>
+
+
+    <div class="webmap-app">
+
+
+        <!-- ==============================
+             LEFT PANEL
+        =============================== -->
+
+        <aside class="webmap-panel">
+
+    <div class="webmap-panel-title">
+        <span>LOCATIONS</span>
+        <h3>My Journey</h3>
+    </div>
+
+
+    <!-- ANKARA -->
+
+    <button
+        class="webmap-location-card"
+        id="goAnkara"
+        type="button"
+    >
+        <span class="location-number">01</span>
+
+        <div>
+            <h4>Ankara</h4>
+            <p>University & Academic Life</p>
+        </div>
+
+        <span class="location-arrow">→</span>
+    </button>
+
+
+    <!-- ANTALYA -->
+
+    <button
+        class="webmap-location-card"
+        id="goAntalya"
+        type="button"
+    >
+        <span class="location-number">02</span>
+
+        <div>
+            <h4>Antalya</h4>
+            <p>Hometown</p>
+        </div>
+
+        <span class="location-arrow">→</span>
+    </button>
+
+
+    <!-- ISTANBUL -->
+
+    <button
+        class="webmap-location-card"
+        id="goIstanbul"
+        type="button"
+    >
+        <span class="location-number">03</span>
+
+        <div>
+            <h4>Istanbul</h4>
+            <p>Kadıköy</p>
+        </div>
+
+        <span class="location-arrow">→</span>
+    </button>
+
+
+    <!-- BUDAPEST -->
+
+    <button
+        class="webmap-location-card"
+        id="goBudapest"
+        type="button"
+    >
+        <span class="location-number">04</span>
+
+        <div>
+            <h4>Budapest</h4>
+            <p>Hungary</p>
+        </div>
+
+        <span class="location-arrow">→</span>
+    </button>
+
+    <!-- BURSA -->
+
+<button
+    class="webmap-location-card"
+    id="goBursa"
+    type="button"
+>
+    <span class="location-number">05</span>
+
+    <div>
+        <h4>Bursa</h4>
+        <p>Türkiye</p>
+    </div>
+
+    <span class="location-arrow">→</span>
+</button>
+
+
+<!-- LESVOS -->
+
+<button
+    class="webmap-location-card"
+    id="goLesvos"
+    type="button"
+>
+    <span class="location-number">06</span>
+
+    <div>
+        <h4>Lesvos</h4>
+        <p>Greece</p>
+    </div>
+
+    <span class="location-arrow">→</span>
+</button>
+
+    <!-- VIEW ALL -->
+
+    <button
+        class="webmap-reset-button"
+        id="showTurkey"
+        type="button"
+    >
+        View All Locations
+    </button>
+
+
+    <!-- COORDINATES -->
+
+    <div class="webmap-coordinate-box">
+
+        <span>MAP COORDINATES</span>
+
+        <p id="coordinateDisplay">
+            Click anywhere on the map
+        </p>
+
+    </div>
+
+</aside>
+
+
+        <!-- ==============================
+             MAP
+        =============================== -->
+
+        <div class="webmap-map-wrapper">
+
+            <div id="portfolioMap"></div>
+
+            <div class="webmap-map-badge">
+                Interactive Web GIS
+            </div>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+<!-- =====================================================
+     OPENLAYERS MAP
+===================================================== -->
+
+<section class="openlayers-section">
+
+    <div class="openlayers-heading">
+
+        <p>OPENLAYERS</p>
+
+        <h2>Explore with OpenLayers</h2>
+
+        <p class="openlayers-description">
+            A second interactive web map created using the
+            OpenLayers JavaScript library.
+        </p>
+
+    </div>
+
+    <div class="openlayers-map-wrapper">
+
+        <div id="openlayersMap"></div>
+
+        <div class="openlayers-badge">
+            OpenLayers Web GIS
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     ABOUT MAP
+===================================================== -->
+
+<section class="webmap-about">
+
+    <div class="webmap-about-heading">
+
+        <p>
+            ABOUT THIS MAP
+        </p>
+
+        <h2>
+            Built with Web GIS
+        </h2>
+
+    </div>
+
+
+    <div class="webmap-about-grid">
+
+
+        <div class="webmap-info-card">
+
+            <span>
+                01
+            </span>
+
+            <h3>
+                Leaflet
+            </h3>
+
+            <p>
+                The interactive map is developed using
+                the Leaflet JavaScript library.
+            </p>
+
+        </div>
+
+
+        <div class="webmap-info-card">
+
+            <span>
+                02
+            </span>
+
+            <h3>
+                OpenStreetMap
+            </h3>
+
+            <p>
+                Geographic basemap data is provided
+                using OpenStreetMap tiles.
+            </p>
+
+        </div>
+
+
+        <div class="webmap-info-card">
+
+            <span>
+                03
+            </span>
+
+            <h3>
+                Interactive
+            </h3>
+
+            <p>
+                Locations, popups and coordinate
+                interactions are controlled with JavaScript.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     CONTACT / FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <!-- LEFT SIDE -->
+
+        <div class="footer-left">
+
+            <h2>UYKUN</h2>
+
+            <p class="footer-title">
+                LET'S CONNECT
+            </p>
+
+            <div class="contact-info">
+
+                <p>
+                    <strong>Phone:</strong>
+
+                    <a href="tel:+905074733516">
+                        +90 507 473 35 16
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+
+                    <a href="mailto:dilarauykun07@gmail.com">
+                        dilarauykun07@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="footer-right">
+
+            <p>FIND ME ONLINE</p>
+
+            <div class="social-links">
+
+                <!-- LINKEDIN -->
+
+                <a
+                    href="https://www.linkedin.com/in/dilara-uykun-141466331/?isSelfProfile=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-button"
+                    aria-label="LinkedIn"
+                >
+                    in
+                </a>
+
+
+                <!-- YOUTUBE -->
+
+                <a
+                    href="https://www.youtube.com/@Uykundilara_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-button"
+                    aria-label="YouTube"
+                >
+                    ▶
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="https://www.instagram.com/uykundilara_/?hl=tr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-button"
+                    aria-label="Instagram"
+                >
+                    ◎
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 UYKUN · Designed & Developed by Dilara Uykun
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<!-- Leaflet -->
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<!-- OpenLayers -->
+<script
+    src="https://cdn.jsdelivr.net/npm/ol@10.6.1/dist/ol.js">
+</script>
+
+<!-- My Maps -->
+<script src="js/maps.js"></script>
+
+
+</body>
+
+</html>
