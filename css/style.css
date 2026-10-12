@@ -5637,3 +5637,58 @@ img {
     }
 
 }
+/* =========================================================
+   UYKUN NAVBAR LOGO
+========================================================= */
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    display: block;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .navbar-logo {
+        width: 120px;
+    }
+}
+/* =========================================================
+   FOOTER UYKUN LOGO
+========================================================= */
+
+.footer-logo-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.footer-logo {
+    display: block;
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+    .footer-logo {
+        width: 150px;
+    }
+}
