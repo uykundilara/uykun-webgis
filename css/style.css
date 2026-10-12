@@ -5692,3 +5692,17 @@ img {
         width: 150px;
     }
 }
+/* NAVBAR LOGO - FINAL SIZE */
+.navbar .logo .navbar-logo {
+    width: 145px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+/* FOOTER LOGO - FINAL SIZE */
+.footer-logo {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
