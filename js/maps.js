@@ -982,6 +982,82 @@ const openlayersMap = new ol.Map({
     })
 
 });
+
+// ======================================================
+// OPENLAYERS - JOURNEY PINS
+// ======================================================
+
+const olLocations = [
+    {
+        name: "Ankara",
+        coords: [32.7346, 39.8672]
+    },
+    {
+        name: "Antalya",
+        coords: [30.6371, 36.8663]
+    },
+    {
+        name: "Istanbul",
+        coords: [29.0277, 40.9917]
+    },
+    {
+        name: "Budapest",
+        coords: [19.0402, 47.4979]
+    },
+    {
+        name: "Bursa",
+        coords: [29.0600, 40.1950]
+    },
+    {
+        name: "Lesvos",
+        coords: [26.5550, 39.1080]
+    }
+];
+
+
+// Her şehir için pin oluştur
+const olMarkerFeatures = olLocations.map(function(location) {
+
+    const marker = new ol.Feature({
+        geometry: new ol.geom.Point(
+            ol.proj.fromLonLat(location.coords)
+        ),
+        name: location.name
+    });
+
+    marker.setStyle(
+        new ol.style.Style({
+
+            text: new ol.style.Text({
+                text: "📍",
+                font: "30px Arial",
+
+                offsetY: -15
+            })
+
+        })
+    );
+
+    return marker;
+});
+
+
+// Marker source
+const olMarkerSource = new ol.source.Vector({
+    features: olMarkerFeatures,
+    wrapX: false
+});
+
+
+// Marker layer
+const olMarkerLayer = new ol.layer.Vector({
+    source: olMarkerSource
+});
+
+
+// Markerları OpenLayers haritasına ekle
+openlayersMap.addLayer(olMarkerLayer);
+ 
 /* =========================================================
    MARKER ZOOM THRESHOLD
    Markers are visible only after zoom level 7
@@ -996,7 +1072,7 @@ const journeyMarkers = [
     lesvosMarker
 ];
 
-const markerZoomThreshold = 7;
+const markerZoomThreshold = 4;
 
 function updateMarkerVisibility() {
 
